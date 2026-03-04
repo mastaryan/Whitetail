@@ -46,104 +46,187 @@
             padding-left: 100px;
         }
         span{
-            font-size: 20px;
+            font-size: 18px;
+            font-family: $font_1;
             font-weight: 500;
             color: #fff;
+            letter-spacing: 2px;
+            text-transform: uppercase;
             display: block;
-            margin-bottom: 24px;
-            padding-left: 95px;
+            margin-bottom: 20px;
             position: relative;
+            padding-left: 70px;
             &::before{
                 position: absolute;
                 content: "";
-                width: 75px;
-                height: 3px;
-                background:$theme-color;
+                width: 50px;
+                height: 2px;
+                background: #fff;
                 left: 0;
-                top: 52%;
+                top: 50%;
                 transform: translateY(-50%);
             }
         }
         h1{
-            font-size: 70px;
+            font-size: 80px;
             font-weight: 900;
-            line-height: 1.2;
             color: #fff;
+            line-height: 1.1;
             margin-bottom: 35px;
             @media #{$lg}{
-                font-size: 60px;
+                font-size: 70px;
             }
             @media #{$md}{
-                font-size: 50px;
+                font-size: 60px;
             }
             @media #{$sm}{
-                font-size: 40px;
+                font-size: 50px;
             }
             @media #{$xs}{
-                font-size: 35px;
+                font-size: 40px;
             }
         }
         p{
-            font-size: 18px;
+            font-size: 20px;
             color: #fff;
-            margin-bottom: 45px;
+            font-weight: 300;
+            margin-bottom: 50px;
             @media #{$lg}{
+                font-size: 18px;
+            }
+            @media #{$md}{
+                font-size: 16px;
+            }
+            @media #{$sm}{
+                font-size: 16px;
+            }
+            @media #{$xs}{
                 font-size: 16px;
             }
         }
     }
-    .hero__btn{
+}
+
+.hero__caption{
+    .hero-btns{
         .boxed-btn{
-            background: $theme-color;
+            background: transparent;
             color: #fff !important;
-            border: 0;
+            border: 1px solid #fff;
             &:hover{
                 background: #fff;
                 color: $theme-color !important;
             }
         }
-    }
-    .slider-active{
-        button.slick-arrow {
-            position: absolute;
-            left: 100px;
-            top: 50%;
-            transform: translateY(-50%);
-            border: 0;
-            padding: 0;
-            z-index: 2;
-            height: 60px;
-            width: 60px;
-            line-height: 60px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 20px;
-            @include transition(.4s);
-            color: #a6b4bb;
-            background: none;
-            margin: 0 auto;
-            bottom: 0;   
-            border: 1px solid #a6b4bb;
+        .boxed-btn-white{
+            background: #fff;
+            color: $theme-color !important;
+            border: 1px solid #fff;
+            margin-left: 20px;
             &:hover{
-                border: 1px solid $theme-color;
-                color:$theme-color;
-            }
-        } 
-        button.slick-next {
-            left: auto;
-            right: 100px;
-            @media #{$lg}{
-                right: 50px;
+                background: transparent;
+                color: #fff !important;
             }
         }
-        button i{
-            font-size: 13px;
-            position: relative;
-            top: -3px;
-        }
+    }
+}
 
-        .slick-initialized .slick-slide {
-            outline: 0;
+// Hero Area 2
+.hero-area2{
+    .hero__caption{
+        span{
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 70px;
+            &::before{
+                position: absolute;
+                content: "";
+                width: 50px;
+                height: 2px;
+                background: #fff;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        h1{
+            font-size: 80px;
+            font-weight: 900;
+            color: #fff;
+            line-height: 1.1;
+            margin-bottom: 35px;
+            @media #{$lg}{
+                font-size: 70px;
+            }
+            @media #{$md}{
+                font-size: 60px;
+            }
+            @media #{$sm}{
+                font-size: 50px;
+            }
+            @media #{$xs}{
+                font-size: 40px;
+            }
+        }
+        p{
+            font-size: 20px;
+            color: #fff;
+            font-weight: 300;
+            margin-bottom: 50px;
+            @media #{$lg}{
+                font-size: 18px;
+            }
+            @media #{$md}{
+                font-size: 16px;
+            }
+            @media #{$sm}{
+                font-size: 16px;
+            }
+            @media #{$xs}{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+// Slider Arrow
+.slider-area{
+    .hero__caption{
+        .slider-arrows{
+            position: absolute;
+            left: 50%;
+            bottom: 50px;
+            transform: translateX(-50%);
+            button{
+                position: relative;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+                background: none;
+                border: 1px solid #a6b4bb;
+                color: #a6b4bb;
+                font-size: 20px;
+                cursor: pointer;
+                @include transition(.4s);
+                i{
+                    position: relative;
+                    top: -3px;
+                }
+                &:hover{
+                    border: 1px solid #fff;
+                    color: #fff;
+                }
+            }
+            button.slick-next {
+                margin-left: 20px;
+            }
         }
     }
 }
