@@ -1,107 +1,64 @@
-
 /*-------------   Color Variable  --------------*/
 
+// Theme colors (hunting palette)
+$theme-color: #14432c;          // Deep forest green
+$theme-color2: #0f3d27;         // Darker forest
+$accent-color: #b34a00;         // Burnt orange/rust
+$accent-hover: #8f3a00;
 
+// Neutrals
+$dark-neutral: #2c1f16;
+$light-neutral: #f8f5f0;
+$text-base: #3a2f25;
+$border-color: #5c4a3c;
 
-//Theme color
-	$theme-color: #14435c;
-	$theme-color2: #1f2b7b;
-	$theme-color3: #f27420;
-	$theme-color4: #ff3500;
+$white: #ffffff;
+$black: #000000;
+$gray: #f5f5f5;
+$gray-light: #f8f5f0;
 
-// btn and Section color
-	$btn_bg: #ff2143;
+// Backgrounds
+.white-bg { background: $white; }
+.gray-bg { background: $gray; }
+.dark-bg { background: $dark-neutral; }
+.light-bg { background: $light-neutral; }
 
-// font-color
-	$heading-color:#092c3f;
-	$heading_color2: #242b5e;
+// Text colors
+.text-primary { color: $theme-color; }
+.text-accent { color: $accent-color; }
+.text-dark { color: $text-base; }
+.text-white { color: $white; }
 
-// Body Font
-	$body-text-color: #737980;
-	$hr-border-color:#eceff8;
-
-
-// Section Bg
-	$section_bg1: #454545;
-
-//Colors
-	$white: #ffffff;
-	$black: #16161a;
-	$gray:#f7f7fd;
-
-
-
-.white-bg{
-	background: #ffffff;
-}
-.gray-bg{
-	background: #f5f5f5;
-}
-
-	$gray-color: #bebebe;
-	$gray-color-2: #bdbdbd;
-	$gray-color3:#5c5c5c;
-	$white_color:#fff;
-
-
-// font color
-	$font_color1: #10285d;
-	$border_color: #fdcb9e;
-	$footer_bg: #303030;
-	$sidebar_bg: #fbf9ff;
-
-
-
-
-// bg
-	$brand-bg: #f1f4fa;
-	$testimonial-bg:#f9fafc;
-
-
-// Soft color
-	$black-soft:#7e7e7e;
-
-// Section Bg color
-	$blue-bg1:#00163e;
-
-
-
-
-/*-------------Color include--------------*/
-
-
-/*-- Background color---*/
-.section-bg1{
-	background: #13151b;
+// Link / hover
+a {
+    color: $theme-color;
+    &:hover {
+        color: $accent-color;
+    }
 }
 
-.gray-bg {
-	background: $gray;
-}
-.white-bg {
-	background:$white;
-}
-.black-bg {
-	background: $black;
-}
-.theme-bg {
-	background:$theme-color;
-}
-.brand-bg{
-	background: $brand-bg;
-}
-.testimonial-bg{
-	background: $testimonial-bg;
+// Button overrides (for consistency)
+.boxed-btn {
+    background: $white;
+    color: $theme-color;
+    border: 1px solid $theme-color;
+    &:hover {
+        background: $theme-color;
+        color: $white;
+        border-color: $theme-color;
+    }
 }
 
+// Footer / dark sections
+.footer-area {
+    background: $dark-neutral;
+    color: $light-neutral;
+    a { color: $light-neutral; &:hover { color: $accent-color; } }
+}
 
-/*--- color------*/
-.white-color {
-	color: $white;
-}
-.black-color {
-	color: $black;
-}
-.theme-color {
-	color: $theme-color;
+// Hero / bradcam overlay adjustments (if needed)
+.bradcam_area {
+    &::before {
+        background: rgba(20, 67, 44, 0.5); // semi-transparent forest green overlay
+    }
 }

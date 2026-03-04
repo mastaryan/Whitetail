@@ -1024,3 +1024,37 @@ hero-btn {
 	background-position: center center !important;
 }
 
+// Global text & heading updates
+body {
+    color: $text-base;
+    background: $light-neutral;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $theme-color;
+}
+
+.section-tittle h2 {
+    color: $theme-color;
+}
+
+a:hover {
+    color: $accent-color;
+}
+
+// Cards & sections
+.bg-white, .blog_details {
+    background: $white !important;
+    border-color: $border-color;
+}
+
+// Accent buttons (add this class where you want orange CTAs)
+.btn-accent {
+    background: $accent-color;
+    border-color: $accent-color;
+    color: $white;
+    &:hover {
+        background: $accent-hover;
+        border-color: $accent-hover;
+    }
+}
