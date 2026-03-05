@@ -18,7 +18,7 @@
             content: "";
             width: 100%;
             height: 0;
-            background:#ff2143;
+            background:#f76201;
            @include transition(.4s);
             bottom: 0;
             left: 0;
@@ -27,7 +27,7 @@
         }
         .cat-icon{
             span{
-                color: #eb566c;
+                color: #f76201;
                 font-size: 65px;
                 margin-bottom: 30px;
                 display: block;

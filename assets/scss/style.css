@@ -424,7 +424,7 @@ hr {
 }
 
 .btn {
-  background: #ff2143;
+  background: #f76201;
   padding: 27px 44px;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
@@ -511,7 +511,7 @@ a:hover {
 
 .submit-btn {
   width: 100%;
-  background: #ff2143;
+  background: #f76201;
   padding: 19px 44px;
   color: #fff;
   cursor: pointer;
@@ -688,7 +688,7 @@ hero-btn {
   }
 }
 .header-area .header-top {
-  background: #0d2d3e;
+  background: #f76201;
   padding: 13px 0px;
 }
 .header-area .header-top .header-info-left ul li {
@@ -734,7 +734,7 @@ hero-btn {
   z-index: 1;
 }
 .main-header .main-menu ul li a {
-  color: #0d2d3e;
+  color: #f76201;
   font-weight: 400;
   padding: 39px 19px;
   display: block;
@@ -756,7 +756,7 @@ hero-btn {
 .main-header .main-menu ul ul.submenu {
   position: absolute;
   width: 170px;
-  background: #0d2d3e;
+  background: #f76201;
   left: 0;
   top: 90%;
   visibility: hidden;
@@ -801,7 +801,7 @@ hero-btn {
   -o-transform: rotateY(0deg);
 }
 .header-area .header-top .header-info-right .header-social a:hover i {
-  color: #ff2143;
+  color: #f76201;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
@@ -1155,7 +1155,7 @@ hero-btn {
   content: "";
   width: 100%;
   height: 0;
-  background: #ff2143;
+  background: #f76201;
   transition: all 0.4s ease-out 0s;
   bottom: 0;
   left: 0;
@@ -1163,7 +1163,7 @@ hero-btn {
   border: 9px solid #fff;
 }
 .categories-area .single-cat .cat-icon span {
-  color: #eb566c;
+  color: #f76201;
   font-size: 65px;
   margin-bottom: 30px;
   display: block;
@@ -1276,7 +1276,7 @@ hero-btn {
   margin-bottom: 30px;
 }
 .count-down-area .single-counter.active {
-  background: #ff2143;
+  background: #f76201;
   border: 10px solid #fff;
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
   position: relative;
@@ -1465,7 +1465,7 @@ hero-btn {
   background: #fff;
 }
 .team-area .single-team .team-caption span {
-  color: #ff2143;
+  color: #f76201;
   font-size: 14px;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
@@ -1482,7 +1482,7 @@ hero-btn {
   left: -47px;
   top: 50%;
   transform: translateY(-50%);
-  background: #ff2143;
+  background: #f76201;
 }
 .team-area .single-team .team-caption h3 a {
   color: #161e46;
@@ -1516,7 +1516,7 @@ hero-btn {
   content: "";
   width: 54px;
   height: 2px;
-  background: #eb566c;
+  background: #f76201;
   top: 0;
   left: 0px;
   top: 50%;
@@ -1979,7 +1979,7 @@ hero-btn {
   }
 }
 .home-blog-area .home-blog-single .blog-img-cap .blog-cap .more-btn {
-  color: #ff2143;
+  color: #f76201;
   text-transform: capitalize;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
@@ -1994,7 +1994,7 @@ hero-btn {
   left: 0px;
   top: 50%;
   transform: translateY(-50%);
-  background: #ff2143;
+  background: #f76201;
 }
 
 .home-blog-single:hover .blog-img img {
@@ -2393,7 +2393,7 @@ hero-btn {
   color: #242b5e;
 }
 .blog_details a:hover {
-  color: #ff2143;
+  color: #f76201;
 }
 .blog_details h2 {
   font-size: 18px;
@@ -2796,7 +2796,7 @@ hero-btn {
   display: inline-block;
 }
 .single-post-area .blog-author a:hover {
-  color: #ff2143;
+  color: #f76201;
 }
 .single-post-area .blog-author p {
   margin-bottom: 0;

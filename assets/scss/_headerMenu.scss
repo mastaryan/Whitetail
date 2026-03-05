@@ -29,7 +29,7 @@
     }
     .header-top{
         
-        background: #0d2d3e;
+        background: #f76201;
         padding: 13px 0px;
         .header-info-left{
             ul{
@@ -83,7 +83,7 @@
                 position: relative;
                 z-index: 1;
                 & a{
-                    color: #0d2d3e;
+                    color: #f76201;
                     font-weight: 400;
                     padding: 39px 19px;
                     display: block;
@@ -109,7 +109,7 @@
             & ul.submenu{
                 position: absolute;
                 width: 170px;
-                background: #0d2d3e;
+                background: #f76201;
                 left: 0;
                 top: 90%;
                 visibility: hidden;
@@ -170,7 +170,7 @@
                     }
                     // Hover
                     &:hover i {
-                        color: #ff2143;
+                        color: #f76201;
                         transform: rotateY(180deg);
                         -webkit-transform: rotateY(180deg);
                         -moz-transform: rotateY(180deg);
