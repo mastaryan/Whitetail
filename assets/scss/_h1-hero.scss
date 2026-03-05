@@ -36,7 +36,7 @@
 
 .slider-area{
     margin-top: -1px;
-    background-image: url(../img/hero/h1_hero.jpg);
+    background-image: url(../img/hero/h1_hero.png);
     background-repeat:no-repeat ;
     background-position: center center;
     background-size: cover;
@@ -49,184 +49,226 @@
             font-size: 18px;
             font-family: $font_1;
             font-weight: 500;
-            color: #fff;
-            letter-spacing: 2px;
+            margin-bottom: 22px;
             text-transform: uppercase;
-            display: block;
-            margin-bottom: 20px;
+            color:#eb566c;
+            display: inline-block;
             position: relative;
-            padding-left: 70px;
+            padding-left: 100px;
+            @media #{$xs}{
+                font-size: 13px;
+            }
             &::before{
                 position: absolute;
                 content: "";
-                width: 50px;
+                width: 70px;
                 height: 2px;
-                background: #fff;
-                left: 0;
+                background: #eb566c;
+                top: 0;
+                left:0px;
                 top: 50%;
                 transform: translateY(-50%);
             }
         }
-        h1{
-            font-size: 80px;
-            font-weight: 900;
-            color: #fff;
-            line-height: 1.1;
-            margin-bottom: 35px;
+        & h1{
+            font-size: 85px;
+            font-weight: 800;
+            margin-bottom: 14px;
+            color: #000000;
+            font-family: $font_3;
+            line-height: 1.2;
+            margin-bottom: 33px;
+            @media #{$large1}{
+                font-size: 71px;
+            }
             @media #{$lg}{
-                font-size: 70px;
+                font-size: 60px;
+                line-height: 1.2;
             }
             @media #{$md}{
-                font-size: 60px;
+                font-size: 50px;
+                line-height: 1.2;
             }
+            @media #{$sm}{
+                font-size: 35px;
+                line-height: 1.2;
+            }
+            @media #{$xs}{
+                font-size:29px;
+                line-height: 1.2;
+            }
+        }
+        & p{
+            font-size: 16px;
+            color: #000000;
+            font-family: $font_1;
+            margin-bottom: 39px;
+            margin-bottom: 7px;
+            margin-bottom: 50px;
+            @media #{$xs}{
+                margin-bottom: 30px;
+                font-size: 14px;
+                br{
+                    display: none;
+                }
+            }
+            @media #{$sm}{
+                br{
+                    display: none;
+                }
+            }
+            @media #{$md}{
+                br{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// Hero Overly
+.hero-overly {
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: rgba(1, 10, 28,  0.3);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+}
+.hero-overly2 {
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: rgba(13, 45, 62,0.8);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+}
+
+//  Transparent Header
+.header-transparent {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 9;
+}
+
+// Another Hero Page
+.slider-area2{
+    .hero-cap{
+        & h2{
+            color: #fff;
+            font-size: 60px;
+            font-weight: 700;
+            text-transform: capitalize;
+            line-height: 1;
             @media #{$sm}{
                 font-size: 50px;
-            }
+              }
             @media #{$xs}{
-                font-size: 40px;
-            }
+                font-size: 35px;
+              }
         }
-        p{
-            font-size: 20px;
-            color: #fff;
-            font-weight: 300;
-            margin-bottom: 50px;
-            @media #{$lg}{
+        .breadcrumb {
+            background: none;
+            padding: 0;
+            margin: 0;
+
+            a {
+                color: #dcdcdc;
                 font-size: 18px;
+                text-transform: capitalize;
             }
-            @media #{$md}{
-                font-size: 16px;
-            }
-            @media #{$sm}{
-                font-size: 16px;
-            }
-            @media #{$xs}{
-                font-size: 16px;
-            }
+        }
+        .breadcrumb-item + .breadcrumb-item::before {
+            color: #dcdcdc;
         }
     }
+
 }
 
-.hero__caption{
-    .hero-btns{
-        .boxed-btn{
-            background: transparent;
-            color: #fff !important;
-            border: 1px solid #fff;
-            &:hover{
-                background: #fff;
-                color: $theme-color !important;
-            }
-        }
-        .boxed-btn-white{
-            background: #fff;
-            color: $theme-color !important;
-            border: 1px solid #fff;
-            margin-left: 20px;
-            &:hover{
-                background: transparent;
-                color: #fff !important;
-            }
-        }
-    }
-}
 
-// Hero Area 2
-.hero-area2{
-    .hero__caption{
-        span{
-            color: #fff;
-            font-size: 18px;
-            font-weight: 500;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            display: block;
-            margin-bottom: 20px;
-            position: relative;
-            padding-left: 70px;
-            &::before{
-                position: absolute;
-                content: "";
-                width: 50px;
-                height: 2px;
-                background: #fff;
-                left: 0;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-        }
-        h1{
-            font-size: 80px;
-            font-weight: 900;
-            color: #fff;
-            line-height: 1.1;
-            margin-bottom: 35px;
-            @media #{$lg}{
-                font-size: 70px;
-            }
-            @media #{$md}{
-                font-size: 60px;
-            }
-            @media #{$sm}{
-                font-size: 50px;
-            }
-            @media #{$xs}{
-                font-size: 40px;
-            }
-        }
-        p{
-            font-size: 20px;
-            color: #fff;
-            font-weight: 300;
-            margin-bottom: 50px;
-            @media #{$lg}{
-                font-size: 18px;
-            }
-            @media #{$md}{
-                font-size: 16px;
-            }
-            @media #{$sm}{
-                font-size: 16px;
-            }
-            @media #{$xs}{
-                font-size: 16px;
-            }
-        }
-    }
-}
-
-// Slider Arrow
-.slider-area{
-    .hero__caption{
-        .slider-arrows{
+// arrow
+.slider-active {
+    & button{
+        &.slick-arrow {
             position: absolute;
-            left: 50%;
-            bottom: 50px;
-            transform: translateX(-50%);
-            button{
-                position: relative;
-                width: 60px;
-                height: 60px;
-                line-height: 60px;
-                text-align: center;
-                background: none;
-                border: 1px solid #a6b4bb;
-                color: #a6b4bb;
-                font-size: 20px;
-                cursor: pointer;
-                @include transition(.4s);
-                i{
-                    position: relative;
-                    top: -3px;
-                }
-                &:hover{
-                    border: 1px solid #fff;
-                    color: #fff;
-                }
+            top: 50%;
+            left: 100px;
+            @media #{$large1}{
+                left: 15px;
             }
-            button.slick-next {
-                margin-left: 20px;
+            @media #{$large2}{
+                left: 20px;
+            }
+            @media #{$lg}{
+                right: 130px;
+                left: auto;
+           }
+            // @media #{$lg}{
+            //     right: 100px;
+            // }
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            background: none;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            opacity: 1;
+            visibility: visible;
+            height: 60px;
+            width: 60px;
+            cursor: pointer;
+            border: 1px solid #a6b4bb ;
+           @include transition(.4s);
+            i{
+                font-size: 20px;
+                line-height: 60px;
+                color: #a6b4bb;
+                @include transition(.3s);
+            }
+        }
+        &.slick-next {
+            left: auto;
+            right: 100px;
+            @media #{$lg}{
+                right: 50px;
             }
         }
     }
+    button.slick-next {
+        border: 1px solid #1b4962;
+            i{
+            color: #1b4962;
+        }
+        @media #{$laptop}{
+            right: 20px; 
+        }
+    }
+    & button:hover {
+        border: 1px solid #1b4962;
+         i{
+            color: #1b4962;
+        }
+    }
+    
 }
