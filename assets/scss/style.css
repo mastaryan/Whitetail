@@ -1130,7 +1130,7 @@ hero-btn {
 }
 
 .categories-area {
-  background: #f7f7f7;
+  background: #79866D;
 }
 .categories-area .single-cat {
   border: 9px solid transparent;
@@ -1315,7 +1315,7 @@ hero-btn {
 }
 
 .services-area {
-  background: #f7f7f7;
+  background:#79866D;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .services-area .single-services {
@@ -1450,7 +1450,7 @@ hero-btn {
 }
 
 .team-area {
-  background: #f7f7f7;
+  background: #79866D;
 }
 .team-area .single-team .team-img {
   overflow: hidden;
@@ -1495,7 +1495,7 @@ hero-btn {
 }
 
 .brand-area {
-  background: #f7f7f7;
+  background: #79866D;
 }
 .brand-area .single-brand.slick-slide {
   opacity: 0.7;
@@ -1871,7 +1871,7 @@ hero-btn {
 }
 
 .home-blog-area {
-  background: #f7f7f7;
+  background: #79866D;
 }
 .home-blog-area .home-blog-single {
   transition: all 0.4s ease-out 0s;
@@ -1901,7 +1901,7 @@ hero-btn {
   font-weight: 300;
   color: #011548;
   padding: 20px 30px 20px 84px;
-  background: #f7f7f7;
+  background: #79866D;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-blog-area .home-blog-single .blog-img-cap .blog-img ul li {

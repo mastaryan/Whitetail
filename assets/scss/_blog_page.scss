@@ -1,7 +1,7 @@
 
 // Home Page Blog
 .home-blog-area{
-    background: #f7f7f7;
+    background: #79866D;
     .home-blog-single{
         @include transition(.4s);
         .blog-img-cap{
@@ -26,7 +26,7 @@
                         font-weight: 300;
                         color: #011548;
                         padding: 20px 30px 20px 84px;
-                        background: #f7f7f7;
+                        background: #79866D;
                         @media #{$md}{
                             padding: 20px 10px 20px 20px;
                         }
